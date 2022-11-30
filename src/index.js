@@ -4,9 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function ButtonSet(props){
+  return(
+    <button>{props.children}</button>
+  );  
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+root.render(  
+  <React.StrictMode>    
+    <div>
+      <ButtonSet>test</ButtonSet>
+      <div id="show-area"></div>
+    </div>
     <App />
   </React.StrictMode>
 );
